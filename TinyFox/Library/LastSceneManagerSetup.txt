@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/ScenceManager/Level1.unity
+- path: Assets/ScenceManager/MainMenu.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

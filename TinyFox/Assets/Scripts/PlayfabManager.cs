@@ -80,8 +80,9 @@ public class PlayfabManager : MonoBehaviour
             {
                 GameObject tempListing = Instantiate(listingPrefab, listingContainer);
                 LeaderboardListing LL = tempListing.GetComponent<LeaderboardListing>();
-                LL.playerNameText.text = item.PlayFabId;
-                LL.playerScoreText.text = item.StatValue.ToString();
+                LL.playerRankText.text = (item.Position+1).ToString();
+                LL.playerNameText.text = item.DisplayName;
+                LL.playerScoreText.text = item.StatValue.ToString();            
                 Debug.Log(item.Position + " " + item.PlayFabId + " " + item.StatValue);
             }
     }
