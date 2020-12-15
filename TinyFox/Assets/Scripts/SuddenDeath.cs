@@ -30,14 +30,14 @@ public class SuddenDeath : MonoBehaviour
     {
         if (cOrT == collideOrTrigger2D.trigger)
         {          
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (cOrT == collideOrTrigger2D.collider)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

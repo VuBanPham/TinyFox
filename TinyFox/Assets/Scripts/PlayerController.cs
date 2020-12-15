@@ -20,12 +20,13 @@ public class PlayerController : MonoBehaviour
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
 	const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
-	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+	private bool m_FacingRight = true;  // For determining which way the player is currently facing.	
 
 	//Player's Variables
 	private Rigidbody2D m_Rigidbody2D;
 	private Vector3 m_Velocity = Vector3.zero;
 	public Animator animator;
+	public Animator anim1;
 	private bool jump = false;
 
 	//Ladder's Variables
@@ -52,6 +53,7 @@ public class PlayerController : MonoBehaviour
 
 	private void Awake()
 	{
+		anim1 = GameObject.FindGameObjectWithTag("Cherries").GetComponent<Animator>();
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();		
 
 		if (OnLandEvent == null)
@@ -76,6 +78,7 @@ public class PlayerController : MonoBehaviour
 
 		//Set y velocity based on player y location
 		animator.SetFloat("yVelocity", m_Rigidbody2D.velocity.y);
+		animator.SetFloat("xVelocity", m_Rigidbody2D.velocity.x);
 
 		if (m_Rigidbody2D.velocity.y < -3)
 		{
@@ -109,7 +112,8 @@ public class PlayerController : MonoBehaviour
 	{
 		if (other.gameObject.CompareTag("Cherries"))
 		{
-			Debug.Log("Cherry Collected!");			
+			Debug.Log("Cherry Collected!");
+			//anim1.SetBool("IsDestroy",true);		
 			Destroy(other.gameObject);
 			
 		}
@@ -128,7 +132,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Enemy" )
 		{
-			if (animator.GetCurrentAnimatorStateInfo(0).IsName("Jumping"))
+			if (m_Rigidbody2D.velocity.y < 0)
 			{
 				//Jump on top of the enemy
 				Vector2 velocity = m_Rigidbody2D.velocity;

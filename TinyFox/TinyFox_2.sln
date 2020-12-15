@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayFab", "PlayFab.csproj", "{BF4327FC-BC1C-5942-ABDB-5B35ACA7A787}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstarPathfindingProject", "AstarPathfindingProject.csproj", "{F6552673-5402-90F5-6DF1-4ABF98F7F359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{4CFD1D29-F30F-09F3-D8EA-8800FC64A453}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstarPathfindingProjectEditor", "AstarPathfindingProjectEditor.csproj", "{1238E5A1-50B1-06D7-EA59-B1DF54FAAF8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayFabEditorExtensions", "PlayFabEditorExtensions.csproj", "{9625CD63-6BB0-19B1-B720-9BCC9B506814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageToolsEditor", "PackageToolsEditor.csproj", "{15324B5C-8FB2-8280-833B-9C63115E2E8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayFabSDKEditor", "PlayFabSDKEditor.csproj", "{BE3F3F5A-4CF4-D454-9AD1-3664BBADC142}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF4327FC-BC1C-5942-ABDB-5B35ACA7A787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF4327FC-BC1C-5942-ABDB-5B35ACA7A787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF4327FC-BC1C-5942-ABDB-5B35ACA7A787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF4327FC-BC1C-5942-ABDB-5B35ACA7A787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6552673-5402-90F5-6DF1-4ABF98F7F359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6552673-5402-90F5-6DF1-4ABF98F7F359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6552673-5402-90F5-6DF1-4ABF98F7F359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6552673-5402-90F5-6DF1-4ABF98F7F359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CFD1D29-F30F-09F3-D8EA-8800FC64A453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CFD1D29-F30F-09F3-D8EA-8800FC64A453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CFD1D29-F30F-09F3-D8EA-8800FC64A453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CFD1D29-F30F-09F3-D8EA-8800FC64A453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1238E5A1-50B1-06D7-EA59-B1DF54FAAF8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1238E5A1-50B1-06D7-EA59-B1DF54FAAF8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1238E5A1-50B1-06D7-EA59-B1DF54FAAF8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1238E5A1-50B1-06D7-EA59-B1DF54FAAF8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9625CD63-6BB0-19B1-B720-9BCC9B506814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9625CD63-6BB0-19B1-B720-9BCC9B506814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9625CD63-6BB0-19B1-B720-9BCC9B506814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9625CD63-6BB0-19B1-B720-9BCC9B506814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15324B5C-8FB2-8280-833B-9C63115E2E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15324B5C-8FB2-8280-833B-9C63115E2E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15324B5C-8FB2-8280-833B-9C63115E2E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15324B5C-8FB2-8280-833B-9C63115E2E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3F3F5A-4CF4-D454-9AD1-3664BBADC142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3F3F5A-4CF4-D454-9AD1-3664BBADC142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3F3F5A-4CF4-D454-9AD1-3664BBADC142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3F3F5A-4CF4-D454-9AD1-3664BBADC142}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

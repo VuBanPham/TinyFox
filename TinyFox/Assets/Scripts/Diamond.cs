@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Diamond : MonoBehaviour
 {
-    public int diamondValue = 1;
+    int diamondValue = 1;
 
     public void OnTriggerEnter2D(Collider2D other)
     {

@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Diamond
   - Ladder
+  - Score
   layers:
   - Default
   - TransparentFX
